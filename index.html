@@ -21,10 +21,17 @@
       <form>
         <div class="form-row">
           <div class="col-md-6 offset-md-3">
-            <input type="text" v-model="message" class="form-control" placeholder="Last name">
+            <input type="text" v-model="person" class="form-control" placeholder="Last name">
+            <button @click.prevent="addPerson" class="btn btn-primary">Agregar</button>
           </div>
         </div>
       </form>
+
+      <ul>
+        <li v-for="(person, index) in people" :key="index">
+          {{person}}
+        </li>
+      </ul>
   </div>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
