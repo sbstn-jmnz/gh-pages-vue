@@ -8,9 +8,25 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
+  <!-- As a heading -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">Gh-Pages loves Vue.js</span>
+    </div>
+  </nav>
+<div class="contaier">
   <div id="app" class="text-center">
     <h1>{{ message }}</h1>
+
+      <form>
+        <div class="form-row">
+          <div class="col-md-6 offset-md-3">
+            <input type="text" v-model="message" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+      </form>
   </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
